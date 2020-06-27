@@ -1,3 +1,4 @@
 import ErrorBoundary from './ErrorBoundary'
+import ProfilePic from './ProfilePic'
 
-export { ErrorBoundary }
+export { ErrorBoundary, ProfilePic }

@@ -6,6 +6,7 @@ export const useStyles = makeStyles(() => ({
     margin: '0 auto',
     width: '100%',
     textAlign: 'left',
+    fontFamily: 'Inter',
   },
 }))
 
@@ -67,6 +68,7 @@ export const Town = styled.div`
   padding: 0.5rem 1rem;
   cursor: pointer;
   align-items: center;
+  transition: all 0.2s;
 
   &.selected {
     background-color: #eaeaea;

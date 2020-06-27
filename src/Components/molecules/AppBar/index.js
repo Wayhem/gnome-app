@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useRecoilValue, useRecoilState } from 'recoil'
 import Arrow from 'Assets/Icons/Arrow'
+import { ProfilePic } from 'Components/atoms'
 import { DataQuery } from 'Recoil/Selectors'
 import { FilteredLocationState } from 'Recoil/Atoms'
 import Button from '@material-ui/core/Button'
@@ -8,6 +9,7 @@ import { ArrowDropDown } from 'styled-icons/remix-line'
 import { Row, useStyles, TownsContainer, Town, StyledText, SelectorContainer } from './styled'
 
 const Bar = () => {
+  // TODO: test selector
   const classes = useStyles()
   const [display, setDisplay] = useState('none')
   const { locationFilters } = useRecoilValue(DataQuery)
@@ -50,6 +52,7 @@ const Bar = () => {
           </TownsContainer>
         </div>
       </SelectorContainer>
+      <ProfilePic />
     </Row>
   )
 }
