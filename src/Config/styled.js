@@ -1,5 +1,6 @@
 /* eslint-disable max-len */
 import { createGlobalStyle } from 'styled-components'
+import colors from 'Assets/colors'
 
 export const GlobalStyle = createGlobalStyle`
   body {
@@ -23,3 +24,7 @@ input,label,select,button,textarea{margin:0;border:0;padding:0;display:inline-bl
     margin: 0;
   }
 `
+
+export const theme = {
+  colors,
+}

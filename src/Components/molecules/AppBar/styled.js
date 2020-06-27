@@ -39,6 +39,7 @@ export const TownsContainer = styled.div`
   max-height: 14rem;
   overflow-y: scroll;
   background: #fff;
+  display: ${props => props.display};
 
   :hover {
     .selected {

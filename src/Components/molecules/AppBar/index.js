@@ -41,8 +41,8 @@ const Bar = () => {
         >
           {filteredLocation}
         </Button>
-        <div style={{ height: 0, border: '1px solid rgba(51, 51, 51, 0.24)', position: 'relative', display }}>
-          <TownsContainer>
+        <div style={{ height: 0, border: '1px solid rgba(51, 51, 51, 0.24)', position: 'relative' }}>
+          <TownsContainer display={display}>
             {locationFilters.map(location => (
               <Town key={location} onClick={() => handleClose(location)}>
                 <StyledText padding='8px 0'>{location}</StyledText>
