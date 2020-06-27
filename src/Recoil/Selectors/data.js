@@ -1,10 +1,17 @@
 import { selector } from 'recoil'
 import { getTownData } from 'Services/api'
+import { townsData } from './dataMock'
 
 const dataFetchQuery = selector({
   key: 'currentData',
   get: async () => {
-    const { data = {} } = await getTownData()
+    let data = {}
+    try {
+      const { data: fetchedJson } = await getTownData()
+      data = fetchedJson
+    } catch (e) {
+      data = townsData
+    }
     const locationFilters = Object.keys(data)
     const hairFilter = new Set()
     let proffesionFilter = new Set()
