@@ -1,3 +1,4 @@
-import DataState from './Data'
+import DataState from './data'
+import LocationFiltersState from './locationFilters'
 
-export { DataState }
+export { DataState, LocationFiltersState }

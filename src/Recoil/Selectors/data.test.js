@@ -2,7 +2,7 @@ import axios from 'axios'
 import React, { Suspense } from 'react'
 import { useRecoilValue, RecoilRoot } from 'recoil'
 import { render } from '@testing-library/react'
-import Data from './Data'
+import Data from './data'
 
 jest.mock('axios')
 

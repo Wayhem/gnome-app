@@ -1,3 +1,3 @@
-import DataQuery from './Data'
+import DataQuery from './data'
 
 export { DataQuery }
