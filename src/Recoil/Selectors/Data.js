@@ -5,14 +5,17 @@ const dataFetchQuery = selector({
   key: 'currentData',
   get: async () => {
     const { data = {} } = await getTownData()
-    const { Brastlewark = [] } = data
+    const locationFilters = Object.keys(data)
     const hairFilter = new Set()
     let proffesionFilter = new Set()
-    Brastlewark.forEach(({ hair_color: hairColor, professions }) => {
-      hairFilter.add(hairColor)
-      proffesionFilter = new Set([...proffesionFilter, ...professions])
-    })
-    return { data, hairFilter: Array.from(hairFilter), proffesionFilter: Array.from(proffesionFilter) }
+    locationFilters.forEach(key =>
+      data[key].forEach(({ hair_color: hairColor, professions }) => {
+        hairFilter.add(hairColor)
+        proffesionFilter = new Set([...proffesionFilter, ...professions])
+      })
+    )
+
+    return { data, hairFilter: Array.from(hairFilter), proffesionFilter: Array.from(proffesionFilter), locationFilters }
   },
 })
 
