@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const FiltersContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
-  padding: 5rem 2rem;
+  padding: 160px 2rem;
   flex-wrap: wrap;
 
   @media screen and (max-width: 991px) {

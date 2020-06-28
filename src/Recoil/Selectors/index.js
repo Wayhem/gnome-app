@@ -1,3 +1,4 @@
 import DataQuery from './data'
+import FilteredData from './filteredData'
 
-export { DataQuery }
+export { DataQuery, FilteredData }

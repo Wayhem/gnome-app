@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react'
 import { RecoilRoot } from 'recoil'
 import { ThemeProvider } from 'styled-components/macro'
-import { Home } from 'Components/pages'
+import { Home, HomeSkeleton } from 'Components/pages'
 import { ErrorBoundary } from 'Components/atoms'
 import { GlobalStyle, theme } from 'Config/styled'
 
@@ -14,7 +14,7 @@ const App = () => (
     <RecoilRoot>
       <ThemeProvider theme={theme}>
         <ErrorBoundary fallback={<div>error</div>}>
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<HomeSkeleton />}>
             <Home />
           </Suspense>
         </ErrorBoundary>

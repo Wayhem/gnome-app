@@ -6,4 +6,7 @@ export default {
   bittersweet: '#F07167',
   white: '#ffffff',
   black: '#333333',
+  gray40l: '#666666',
+  gray: '#4D4D4D',
+  gray99l: '#FCFCFC',
 }

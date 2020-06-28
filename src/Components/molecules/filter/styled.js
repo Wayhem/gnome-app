@@ -25,6 +25,24 @@ export const Container = styled.div`
     transform: ${props => (props.focused ? null : 'translate(-1px)')};
     box-shadow: ${props => (props.focused ? null : '0 2px 6px rgba(51, 51, 51, 0.4)')};
   }
+
+  @media screen and (max-width: 1320px) {
+    width: 30%;
+  }
+
+  @media screen and (max-width: 991px) {
+    width: 38%;
+    margin: 0.75rem;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 45%;
+    margin: 0.5rem;
+  }
+
+  @media screen and (max-width: 479px) {
+    width: 80%;
+  }
 `
 
 export const Element = styled.div`
