@@ -27,8 +27,13 @@ class ErrorBoundary extends React.Component {
 }
 
 ErrorBoundary.propTypes = {
-  fallback: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired,
-  children: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired,
+  fallback: PropTypes.oneOfType([PropTypes.func, PropTypes.object]),
+  children: PropTypes.oneOfType([PropTypes.func, PropTypes.object]),
+}
+
+ErrorBoundary.defaultProps = {
+  fallback: <></>,
+  children: <></>,
 }
 
 export default ErrorBoundary
