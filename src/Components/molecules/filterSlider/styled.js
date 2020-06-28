@@ -3,27 +3,25 @@ import styled from 'styled-components'
 export const Container = styled.div`
   border-radius: 8px;
   background-color: ${props => props.theme.colors[props.color]};
-  color: ${props => props.theme.colors.white};
+  color: ${props => props.theme.colors.black};
   width: 21%;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
   transition: all 0.2s;
   overflow-y: scroll;
-  cursor: ${props => (props.focused ? '' : 'pointer')};
-  margin: 1rem;
   height: 10rem;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
 
   ::-webkit-scrollbar {
     display: none;
   }
 
-  :hover {
-    transform: ${props => (props.focused ? null : 'translateY(-2px)')};
-    box-shadow: ${props => (props.focused ? null : '0 6px 10px rgba(51, 51, 51, 0.2)')};
-  }
-
-  :active {
-    transform: ${props => (props.focused ? null : 'translate(-1px)')};
-    box-shadow: ${props => (props.focused ? null : '0 2px 6px rgba(51, 51, 51, 0.4)')};
+  .slider {
+    width: 75%;
+    margin: auto;
+    font-family: Inter;
+    color: ${props => props.theme.colors.black};
   }
 `
 

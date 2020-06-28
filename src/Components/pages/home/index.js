@@ -3,7 +3,7 @@ import { useRecoilValue, useSetRecoilState } from 'recoil'
 import { DataQuery } from 'Recoil/Selectors'
 import { DataState } from 'Recoil/Atoms'
 import { Appbar } from 'Components/molecules'
-import { FilterHair, FilterProffesion } from 'Components/organisms'
+import { FilterHair, FilterProffesion, FilterAge, FilterHeight, FilterWeight } from 'Components/organisms'
 import { FiltersContainer } from './styled'
 
 const Home = () => {
@@ -20,6 +20,9 @@ const Home = () => {
       <FiltersContainer>
         <FilterHair />
         <FilterProffesion />
+        <FilterAge />
+        <FilterHeight />
+        <FilterWeight />
       </FiltersContainer>
     </>
   )
