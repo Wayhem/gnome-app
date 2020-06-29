@@ -1,4 +1,35 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Gnome App
+
+## Introduction
+
+> Small App implemented to not only test Experimental libraries like Recoil and Suspense React API, while offering a nice user experience.
+
+## Mainly used libraries
+
+| Library | Description |
+| --- | --- |
+| [Material UI](https://material-ui.com/) | Nicely styled and functional components |
+| [Recoil](https://recoiljs.org/) | Graph based state management library (experimental) |
+| [Jest](https://jestjs.io/) | For testing purposes |
+| [Styled-components](https://styled-components.com/) | Styling with JS |
+| [Lodash](https://lodash.com/) | Utilities library |
+
+## Important notes
+
+### Redux vs Recoil
+
+Even thought Redux is a really reliable and as a community, React devs are always trying and developing new state and async data management libraries, for example we have unstated and apollo client for apps connected with graphQL, Recoil is a new experimental library from [facebook](https://github.com/facebookexperimental/Recoil) which was made to not only offer a more reacty way of handling state, but to also offer another paradigm different from single source of truth that Redux is, which is the graph based one.
+
+On production applications and on trade I use Redux and [Redux-saga](https://redux-saga.js.org/) as my bread and butter, and I think it is an extremely good and reliable combination, but for this test I will try using something different.
+
+To Do and Issues:
+- Style error boundary
+- i18n
+- test filters and selectors
+- Recoil issue on console.log https://github.com/facebookexperimental/Recoil/issues/12
+- Material slider debug
+- Posible refactor to redux saga
+- debug problems with jest and watchers (tests passing and failing randomly)
 
 ## Available Scripts
 
@@ -37,34 +68,3 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-
-Recoil issue on console.log https://github.com/facebookexperimental/Recoil/issues/12

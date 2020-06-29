@@ -80,7 +80,7 @@ Filter.propTypes = {
 
 Filter.defaultProps = {
   color: 'black',
-  value: [],
+  value: [0, 100],
   type: '',
   filters: {},
   setValue: () => {},
