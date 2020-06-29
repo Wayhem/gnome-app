@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.js": "/gnome-app/static/js/main.42d50f6f.chunk.js",
+    "main.js.map": "/gnome-app/static/js/main.42d50f6f.chunk.js.map",
+    "runtime-main.js": "/gnome-app/static/js/runtime-main.7835b368.js",
+    "runtime-main.js.map": "/gnome-app/static/js/runtime-main.7835b368.js.map",
+    "static/js/2.4d2a22bc.chunk.js": "/gnome-app/static/js/2.4d2a22bc.chunk.js",
+    "static/js/2.4d2a22bc.chunk.js.map": "/gnome-app/static/js/2.4d2a22bc.chunk.js.map",
+    "index.html": "/gnome-app/index.html",
+    "precache-manifest.fcf5cd698b6b9e0ffac82c88f3066764.js": "/gnome-app/precache-manifest.fcf5cd698b6b9e0ffac82c88f3066764.js",
+    "service-worker.js": "/gnome-app/service-worker.js",
+    "static/js/2.4d2a22bc.chunk.js.LICENSE.txt": "/gnome-app/static/js/2.4d2a22bc.chunk.js.LICENSE.txt",
+    "static/media/39.png": "/gnome-app/static/media/39.f743e406.png",
+    "static/media/3e9957afe36f31ebb249691f0a9e3098.jpg": "/gnome-app/static/media/3e9957afe36f31ebb249691f0a9e3098.862d721d.jpg",
+    "static/media/49095c3ab6870e315be99a7548ae25e7.jpg": "/gnome-app/static/media/49095c3ab6870e315be99a7548ae25e7.9f29f6f5.jpg",
+    "static/media/9f66e5bc9742c03206b48dfad838849a.jpg": "/gnome-app/static/media/9f66e5bc9742c03206b48dfad838849a.af57f8d9.jpg",
+    "static/media/NicePng_batman-png_25335.png": "/gnome-app/static/media/NicePng_batman-png_25335.a8efcf81.png",
+    "static/media/wonderwoman_2017.jpg": "/gnome-app/static/media/wonderwoman_2017.b67d3ee3.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7835b368.js",
+    "static/js/2.4d2a22bc.chunk.js",
+    "static/js/main.42d50f6f.chunk.js"
+  ]
+}
